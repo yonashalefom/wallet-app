@@ -6,7 +6,7 @@ A modern, mobile-first wallet application built with React and TypeScript that p
 
 
 
-![Wallet App Screenshot](docs/images/app-screenshot-home-updated.png)
+![Wallet App Screenshot](docs/images/app-screenshot-home-full.png)
 
 ## 📱 Screenshots
 
@@ -15,11 +15,11 @@ A modern, mobile-first wallet application built with React and TypeScript that p
     <tr>
       <td align="center">
         <strong>Main Dashboard</strong><br/>
-        <img src="docs/images/app-screenshot-home-updated.png" alt="Wallet App Home" width="200"/>
+        <img src="docs/images/app-screenshot-home-full.png" alt="Wallet App Home" width="200"/>
       </td>
       <td align="center">
         <strong>Transaction Details</strong><br/>
-        <img src="docs/images/app-screenshot-transaction-details-updated.png" alt="Transaction Details" width="200"/>
+        <img src="docs/images/app-screenshot-transaction-details-full.png" alt="Transaction Details" width="200"/>
       </td>
     </tr>
   </table>
