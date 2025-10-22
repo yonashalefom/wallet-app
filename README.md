@@ -2,22 +2,43 @@
 
 A modern, mobile-first wallet application built with React and TypeScript that provides a clean and intuitive interface for managing your financial transactions and tracking daily rewards.
 
-🔗 **[Live Demo](https://wallet-p20ei32vr-yonas-halefoms-projects.vercel.app/)**
+🔗 **[Live Demo (Fixed width version)](https://wallet-app-bonus.vercel.app/)**
+🔗 **[Live Demo (Responsive Version)](https://wallet-cl6fofeak-yonas-halefoms-projects.vercel.app/)**
 
-![Wallet App Screenshot](docs/images/app-screenshot-home-updated.png)
+## 🌐 Live Demos
 
-## 📱 Screenshots
+| Version       | URL |
+|---------------|-----|
+| Fixed width   | [https://wallet-app-sepia-ten.vercel.app/](https://wallet-app-sepia-ten.vercel.app/) |
+| Responsive    | [https://wallet-cl6fofeak-yonas-halefoms-projects.vercel.app/](https://wallet-cl6fofeak-yonas-halefoms-projects.vercel.app/) |
+| Bonus Version | [https://wallet-app-bonus.vercel.app/](https://wallet-app-bonus.vercel.app/) |
+
+### Why multiple versions?
+
+- **The Main Version (Fixed width)**: Complete and fully functional. Uses a fixed-width layout for a consistent desktop experience.
+- **The Full-Width Version (Responsive)**: Functionally identical to the main version, but fully responsive. Shines on mobile; on desktop it expands to the full width so not ideal for the desktop version.
+- **The Bonus Version**: Built afterwards during remaining time (~45 minutes) to showcase additional polish and refinements. This version is fully compatible and responsive for desktop and mobile devices. I've also added a theme switch feature. It supports both dark and light teams as well as adapts to the OSs default theme.
+
+## 🎥 Demo
 
 <div align="center">
-  <table>
+  <img src="docs/images/app-use.gif" alt="Wallet App – Demo" width="100%"/>
+  <br/>
+  <em>Quick tour: navigation, and interactions.</em>
+</div>
+
+## 📸 Screenshots
+
+<div align="center">
+  <table style="width:100%;">
     <tr>
-      <td align="center">
-        <strong>Main Dashboard</strong><br/>
-        <img src="docs/images/app-screenshot-home-updated.png" alt="Wallet App Home" width="200"/>
+      <td style="width:50%; padding-right:10px;" align="center">
+        <strong>Homepage</strong><br/>
+        <img src="docs/images/app-light-homepage.jpg" alt="Wallet App – Homepage" width="100%"/>
       </td>
-      <td align="center">
+      <td style="width:50%; padding-left:10px;" align="center">
         <strong>Transaction Details</strong><br/>
-        <img src="docs/images/app-screenshot-transaction-details-updated.png" alt="Transaction Details" width="200"/>
+        <img src="docs/images/app-light-details.jpg" alt="Wallet App – Transaction Details" width="100%"/>
       </td>
     </tr>
   </table>
@@ -47,25 +68,7 @@ A modern, mobile-first wallet application built with React and TypeScript that p
 - **Cashback Tracking**: Automatic cashback percentage display
 - **Authorized User Support**: Track transactions made by family members
 
-## 🌿 Branch Information
 
-**Current Branch: `main`**
-
-This branch features a **fixed-width mobile-optimized layout** using `max-w-sm` for a consistent mobile experience across all devices.
-
-### Layout Options
-
-- **Fixed-Width Layout** (current branch): Uses a fixed mobile-optimized width (`max-w-sm`) for consistent mobile experience
-- **Full-Width Layout** (`full-width-layout-version` branch): Uses the browser's full width for maximum screen utilization
-
-To switch between layouts:
-```bash
-# For fixed-width mobile layout (current)
-git checkout main
-
-# For full-width responsive layout
-git checkout full-width-layout-version
-```
 
 ## 🚀 Quick Start
 
