@@ -49,6 +49,26 @@ A modern, mobile-first wallet application built with React and TypeScript that p
 - **Cashback Tracking**: Automatic cashback percentage display
 - **Authorized User Support**: Track transactions made by family members
 
+## 🌿 Branch Information
+
+**Current Branch: `full-width-layout-version`**
+
+This branch features a **responsive full-width layout** that adapts to any browser width, providing an optimal experience across all device sizes from mobile to desktop.
+
+### Layout Options
+
+- **Full-Width Layout** (current branch): Uses the browser's full width for maximum screen utilization
+- **Fixed-Width Layout** (main branch): Uses a fixed mobile-optimized width (`max-w-sm`) for consistent mobile experience
+
+To switch between layouts:
+```bash
+# For full-width responsive layout (current)
+git checkout full-width-layout-version
+
+# For fixed-width mobile layout
+git checkout main
+```
+
 ## 🚀 Quick Start
 
 ### Prerequisites
