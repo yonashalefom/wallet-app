@@ -22,7 +22,7 @@ A modern, mobile-first wallet application built with React and TypeScript that p
 ## 🎥 Demo
 
 <div align="center">
-  <img src="docs/images/app-use.gif" alt="Wallet App – Demo" width="100%"/>
+  <img src="docs/images/app-use.gif" alt="Wallet App – Demo" width="50%"/>
   <br/>
   <em>Quick tour: navigation, and interactions.</em>
 </div>
