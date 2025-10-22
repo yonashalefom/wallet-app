@@ -2,6 +2,8 @@
 
 A modern, mobile-first wallet application built with React and TypeScript that provides a clean and intuitive interface for managing your financial transactions and tracking daily rewards.
 
+🔗 **[Live Demo](https://wallet-p20ei32vr-yonas-halefoms-projects.vercel.app/)**
+
 ![Wallet App Screenshot](docs/images/app-screenshot-home.png)
 
 ## 📱 Screenshots
