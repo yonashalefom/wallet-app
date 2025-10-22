@@ -1,4 +1,4 @@
-import { format, isToday, isYesterday, isThisWeek } from 'date-fns';
+import { format, isToday, isYesterday, differenceInDays } from 'date-fns';
 
 /**
  * Format transaction date for display
@@ -7,6 +7,8 @@ import { format, isToday, isYesterday, isThisWeek } from 'date-fns';
  */
 export function formatTransactionDate(dateString: string): string {
   const date = new Date(dateString);
+  const today = new Date();
+  const daysDiff = differenceInDays(today, date);
   
   if (isToday(date)) {
     return 'Today';
@@ -16,7 +18,8 @@ export function formatTransactionDate(dateString: string): string {
     return 'Yesterday';
   }
   
-  if (isThisWeek(date)) {
+  // For the last 7 days (excluding today and yesterday)
+  if (daysDiff >= 2 && daysDiff <= 7) {
     return format(date, 'EEEE'); // Full day name (Monday, Tuesday, etc.)
   }
   

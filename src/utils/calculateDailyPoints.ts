@@ -5,7 +5,8 @@ import type { DailyPointsData } from '../types';
  * Seasons: Spring (Mar 1), Summer (Jun 1), Autumn (Sep 1), Winter (Dec 1)
  */
 export function calculateDailyPoints(): DailyPointsData {
-  const now = new Date();
+  // Use October 22, 2025 as the reference date as specified
+  const now = new Date('2025-10-22T00:00:00Z');
   const currentYear = now.getFullYear();
   
   // Define season start dates
@@ -16,7 +17,7 @@ export function calculateDailyPoints(): DailyPointsData {
     { name: 'Winter', start: new Date(currentYear, 11, 1) } // December 1
   ];
   
-  // Find current season
+  // Find current season and calculate day within season
   let seasonDay = 1;
   
   for (let i = 0; i < seasons.length; i++) {
@@ -26,6 +27,7 @@ export function calculateDailyPoints(): DailyPointsData {
       : seasons[i + 1].start;
     
     if (now >= seasonStart && now < nextSeasonStart) {
+      // Calculate days since season start (1-based)
       seasonDay = Math.floor((now.getTime() - seasonStart.getTime()) / (1000 * 60 * 60 * 24)) + 1;
       break;
     }

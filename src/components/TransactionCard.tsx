@@ -35,7 +35,7 @@ export const TransactionCard: React.FC<TransactionCardProps> = ({
 
   return (
     <div 
-      className="flex items-center p-4 bg-white cursor-pointer hover:bg-gray-50 transition-colors border-b border-gray-200 last:border-b-0"
+      className="flex items-center p-3 bg-white cursor-pointer hover:bg-gray-50 transition-colors"
       onClick={() => onClick(transaction)}
     >
       <IconBadge 
@@ -45,35 +45,39 @@ export const TransactionCard: React.FC<TransactionCardProps> = ({
       />
       
       <div className="flex-1 min-w-0">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between mb-1">
           <h3 className="font-semibold text-gray-900 truncate">
             {transaction.name}
           </h3>
-          <div className="text-right">
-            <div className="font-semibold text-gray-900">
-              {formatAmount(transaction.amount, transaction.type)}
-            </div>
-            {transaction.cashbackPercentage && (
-              <div className="text-xs text-gray-500">
-                {transaction.cashbackPercentage}%
+          <div className="flex items-center">
+            <div className="text-right mr-2">
+              <div className="font-semibold text-gray-900">
+                {formatAmount(transaction.amount, transaction.type)}
               </div>
-            )}
+            </div>
+            <FontAwesomeIcon 
+              icon={faChevronRight} 
+              className="text-gray-400" 
+            />
           </div>
         </div>
         
-        <div className="text-sm text-gray-500 truncate">
-          {formatDescription()}
-        </div>
-        
-        <div className="text-xs text-gray-400">
-          {formatTransactionDate(transaction.date)}
+        <div className="flex items-start justify-between">
+          <div className="flex-1 min-w-0">
+            <div className="text-sm text-gray-500 truncate mb-1">
+              {formatDescription()}
+            </div>
+            <div className="text-xs text-gray-400">
+              {formatTransactionDate(transaction.date)}
+            </div>
+          </div>
+          {transaction.cashbackPercentage && (
+            <div className="text-xs bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded ml-2 flex-shrink-0">
+              {transaction.cashbackPercentage}%
+            </div>
+          )}
         </div>
       </div>
-      
-      <FontAwesomeIcon 
-        icon={faChevronRight} 
-        className="text-gray-400 ml-2" 
-      />
     </div>
   );
 };

@@ -52,40 +52,39 @@ export const TransactionDetail: React.FC = () => {
             onClick={() => navigate('/')}
             className="flex items-center text-blue-600 hover:text-blue-800"
           >
-            <FontAwesomeIcon icon={faChevronLeft} className="mr-2" />
-            Back
+            <FontAwesomeIcon icon={faChevronLeft} className="text-xl" />
           </button>
         </div>
         
         {/* Transaction Summary */}
         <div className="px-4 text-center mb-8">
-          <div className="text-4xl font-bold text-gray-900 mb-2">
+          <div className="text-5xl font-bold text-gray-900 mb-2">
             {formatAmount(transaction.amount, transaction.type)}
           </div>
-          <div className="text-lg text-gray-600 mb-1">
+          <div className="text-lg text-gray-500 mb-1">
             {transaction.name}
           </div>
-          <div className="text-sm text-gray-500">
+          <div className="text-sm text-gray-400">
             {formatDate(transaction.date)}
           </div>
         </div>
         
         {/* Transaction Details Card */}
         <div className="px-4">
-          <div className="bg-white rounded-xl p-6 shadow-sm">
+          <div className="bg-white rounded-xl p-3 shadow-sm">
             <div className="mb-4">
               <div className="font-semibold text-gray-900 mb-1">
                 Status: {transaction.status}
               </div>
-              <div className="text-gray-600">
+              <div className="text-gray-500">
                 {transaction.paymentMethod}
               </div>
             </div>
             
             <div className="border-t border-gray-200 pt-4">
               <div className="flex justify-between items-center">
-                <span className="text-gray-900">Total</span>
-                <span className="font-semibold text-gray-900">
+                <span className="font-bold text-black">Total</span>
+                <span className="font-bold text-black">
                   {formatAmount(transaction.amount, transaction.type)}
                 </span>
               </div>
